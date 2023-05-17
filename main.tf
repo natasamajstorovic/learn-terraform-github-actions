@@ -11,7 +11,7 @@ terraform {
   }
   required_version = "~> 1.0"
 
-  backend "remote" {
+  cloud {
     organization = "ACG-Terraform-Demos-1111"
 
     workspaces {
@@ -19,7 +19,6 @@ terraform {
     }
   }
 }
-
 
 
 provider "aws" {
